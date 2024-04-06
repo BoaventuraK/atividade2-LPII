@@ -26,10 +26,10 @@ public class ContaBancaria {
     }
 
     public String imprimirDados(){
-        String dados="| Nome do Correntista: %s; RG: %d; CPF: %d; |" +
-                "\n| Agencia: %s; Conta: %d; Saldo: %.2f |";
+        String dados="| Nome do Correntista: %s|" +
+                "\n| Saldo: %.2f |";
 
-        dados=String.format(dados,this.nomeCorrentista,this.rgCorrentista,this.cpfCorrentista,this.agenciaBancaria,this.numroConta,this.saldoBancario);
+        dados=String.format(dados,this.nomeCorrentista,this.saldoBancario);
 
         return dados;
     }
